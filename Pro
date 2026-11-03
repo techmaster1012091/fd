@@ -92,16 +92,16 @@
     <div class="flex-1 space-y-6 text-center md:text-left">
       <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan text-xs font-medium">
         <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-        <span>Proposed Commuter Platform Concept for LVCC Apalit</span>
+        <span>For LVCC Apalit Commuters Facing 1.5-Hour Morning Queue Bottlenecks</span>
       </div>
       <h1 class="text-4xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
-        Your Morning Commute, <br class="hidden sm:inline"/>
+        FleetSignal: <br class="hidden sm:inline"/>
         <span class="bg-gradient-to-r from-brand-cyan via-teal-300 to-brand-emerald bg-clip-text text-transparent">
-          Without the Long Wait.
+          Serverless P2P Express-Ride Pooling
         </span>
       </h1>
       <p class="text-brand-subtext text-base lg:text-lg max-w-xl mx-auto md:mx-0 font-normal leading-relaxed">
-        Discover a smarter way for LVCC Apalit students to coordinate their commute, reduce terminal uncertainty, and explore faster transportation options.
+        Unblur real-time terminal queues and coordinate instant QR-verified express-fare splits — UNLIKE waiting in unorganized terminal lines or reliance on static chat groups.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-2">
         <a href="#pricing" onclick="trackEvent('hero_primary_cta_click')" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-emerald text-black font-semibold hover:shadow-lg hover:shadow-brand-cyan/20 transition-all flex items-center justify-center gap-2">

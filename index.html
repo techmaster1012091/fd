@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FleetSignal | Smarter Commutes for LVCC Apalit</title>
+<meta name="description" content="Help shape a faster, more predictable commute for LVCC Apalit students. Join the FleetSignal early-access waitlist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root{--bg:#0B0F17;--card:#151C28;--cyan:#00F0FF;--green:#00FF9D;--muted:#9AA7B8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:Inter,sans-serif;background:var(--bg);color:#eef5ff}
+.glass{background:rgba(21,28,40,.78);border:1px solid rgba(148,163,184,.15);backdrop-filter:blur(14px)}
+.glow{box-shadow:0 0 35px rgba(0,240,255,.08)}.gradient{background:linear-gradient(110deg,var(--cyan),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn-main{background:linear-gradient(100deg,#00d9ed,#00e88f);color:#061018;font-weight:800;transition:.2s}.btn-main:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn-ghost{border:1px solid rgba(0,240,255,.35);color:#dffcff}.btn-ghost:hover{background:rgba(0,240,255,.08)}
+.tag{border:1px solid rgba(0,255,157,.25);background:rgba(0,255,157,.07);color:#8fffcf}
+.modal-backdrop{background:rgba(2,6,12,.82);backdrop-filter:blur(8px)}
+input,select{background:#0b111b!important;border:1px solid #293545!important;color:#eaf2ff!important}
+input:focus,select:focus{outline:2px solid rgba(0,240,255,.35)}
+.small-label{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#8d9bad}
+</style>
+</head>
+<body>
+<header class="max-w-7xl mx-auto w-full px-5 py-6 flex items-center justify-between">
+  <a href="#" class="flex items-center gap-3 font-extrabold tracking-tight text-xl"><span class="w-9 h-9 rounded-xl flex items-center justify-center text-slate-950" style="background:var(--cyan)"><span>F</span></span> Fleet<span class="gradient">Signal</span></a>
+  <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300"><a href="#how" class="hover:text-white">How it could work</a><a href="#plans" class="hover:text-white">Plans</a><a href="#faq" class="hover:text-white">FAQ</a></nav>
+  <button onclick="openWaitlist('header')" class="btn-main rounded-xl px-4 py-2.5 text-sm">Join early access</button>
+</header>
+
+<main class="max-w-7xl mx-auto px-5 w-full">
+<section class="grid lg:grid-cols-2 gap-12 items-center py-16 md:py-24">
+ <div>
+  <div class="inline-flex items-center gap-2 tag rounded-full px-3 py-1.5 text-xs font-semibold mb-6"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> CONCEPT • LVCC APALIT</div>
+  <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">Your morning commute,<br><span class="gradient">without the long wait.</span></h1>
+  <p class="text-slate-400 text-lg leading-8 mt-6 max-w-xl">FleetSignal is a proposed commuter coordination service designed around LVCC Apalit students. Help us validate the idea before we build it.</p>
+  <div class="flex flex-wrap gap-3 mt-8"><button onclick="openWaitlist('hero')" class="btn-main rounded-xl px-6 py-4">Get early access <span aria-hidden="true">→</span></button><a href="#plans" class="btn-ghost rounded-xl px-6 py-4">Explore concept</a></div>
+  <p class="text-xs text-slate-500 mt-4">No booking or payment is available yet. This is an idea-validation page.</p>
+ </div>
+ <div class="glass glow rounded-3xl p-6 md:p-8">
+  <div class="flex justify-between items-center"><span class="small-label">The commute challenge</span><span class="tag rounded-full px-2.5 py-1 text-xs">Concept preview</span></div>
+  <div class="mt-7 space-y-4">
+   <div class="rounded-2xl bg-slate-900/80 border border-slate-700/60 p-5"><div class="flex justify-between text-sm"><span class="text-slate-300">Uncertain waiting time</span><span class="text-amber-300">Problem</span></div><div class="h-2 bg-slate-800 rounded-full mt-3 overflow-hidden"><div class="h-full w-4/5 bg-amber-400 rounded-full"></div></div><p class="text-xs text-slate-500 mt-3">Your project focuses on the 6:30 AM–8:00 AM rush, when students can face unpredictable queues and crowded terminals.</p></div>
+   <div class="rounded-2xl p-5 border" style="border-color:rgba(0,240,255,.2);background:rgba(0,240,255,.04)"><div class="flex justify-between text-sm"><span class="text-slate-200">A coordinated commute</span><span style="color:var(--cyan)">Proposed</span></div><div class="h-2 bg-slate-800 rounded-full mt-3 overflow-hidden"><div class="h-full w-2/5 rounded-full" style="background:var(--cyan)"></div></div><p class="text-xs text-slate-500 mt-3">A future service could help students discover ride-pool options and commute information.</p></div>
+  </div>
+  <div class="mt-6 text-xs text-slate-500 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-cyan-300"></span>Illustrative concept only • no live terminal data</div>
+ </div>
+</section>
+
+<section id="how" class="py-16 border-t border-slate-800">
+ <div class="max-w-2xl"><p class="small-label">The concept</p><h2 class="text-3xl md:text-4xl font-bold mt-3">A better way to plan the trip.</h2><p class="text-slate-400 mt-4 leading-7">FleetSignal explores whether commuter coordination can make the trip to campus more predictable. These are proposed features, not active services.</p></div>
+ <div class="grid md:grid-cols-3 gap-4 mt-9">
+  <article class="glass rounded-2xl p-6"><div class="text-2xl mb-4">📡</div><h3 class="font-bold text-lg">Terminal Line Unblur Engine</h3><p class="text-slate-400 text-sm leading-6 mt-2">A proposed terminal monitor for Apalit Junction and Bayan Terminal, showing estimated queue length and waiting time when commuter reports are available.</p><span class="text-xs text-cyan-300 mt-4 inline-block">Planned • no live data yet</span></article>
+  <article class="glass rounded-2xl p-6"><div class="text-2xl mb-4">🤝</div><h3 class="font-bold text-lg">Instant Express Ride Pool</h3><p class="text-slate-400 text-sm leading-6 mt-2">The concept groups up to 3 nearby LVCC batchmates to coordinate a direct express tricycle or jeep ride, with a proposed fare around ₱20 per seat.</p><span class="text-xs text-cyan-300 mt-4 inline-block">Proposed • ₱20/seat</span></article>
+  <article class="glass rounded-2xl p-6"><div class="text-2xl mb-4">👑</div><h3 class="font-bold text-lg">Commuter Pro Pass</h3><p class="text-slate-400 text-sm leading-6 mt-2">A proposed ₱99/month pass for priority express-ride matching, departure alerts before leaving home, and no platform fee on micro-transactions.</p><span class="text-xs text-cyan-300 mt-4 inline-block">Proposed • ₱99/month</span></article>
+  <article class="glass rounded-2xl p-6"><div class="text-2xl mb-4">📲</div><h3 class="font-bold text-lg">QR & GCash Fare Split</h3><p class="text-slate-400 text-sm leading-6 mt-2">A planned QR-based student/ride verification flow and shared fare settlement concept. No GCash integration or payments are active in this prototype.</p><span class="text-xs text-cyan-300 mt-4 inline-block">Planned • not integrated</span></article>
+  <article class="glass rounded-2xl p-6"><div class="text-2xl mb-4">📶</div><h3 class="font-bold text-lg">Passive Mesh Telemetry</h3><p class="text-slate-400 text-sm leading-6 mt-2">Your original Give-to-Get idea: opted-in commuter devices could contribute anonymous signal/queue observations in exchange for access to clearer commute information.</p><span class="text-xs text-cyan-300 mt-4 inline-block">Concept • consent-first</span></article>
+  <article class="glass rounded-2xl p-6"><div class="text-2xl mb-4">🎟️</div><h3 class="font-bold text-lg">Batchmate Referral Reward</h3><p class="text-slate-400 text-sm leading-6 mt-2">The original idea rewards inviting 2 campus batchmates with a free Express Pass. This is a proposed incentive, not an active referral program.</p><span class="text-xs text-cyan-300 mt-4 inline-block">Proposed • invite 2</span></article>
+ </div>
+</section>
+
+<section id="plans" class="py-16 border-t border-slate-800">
+ <div class="text-center max-w-2xl mx-auto"><p class="small-label">Pricing test</p><h2 class="text-3xl md:text-4xl font-bold mt-3">Would you use it?</h2><p class="text-slate-400 mt-4">These proposed prices help us understand interest. Selecting a plan is a research signal, not a purchase.</p></div>
+ <div class="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto mt-10">
+  <article class="glass rounded-3xl p-7"><span class="tag rounded-full px-3 py-1 text-xs">PAY PER RIDE • PROPOSED</span><h3 class="text-2xl font-bold mt-5">Express Ride Pool</h3><p class="text-4xl font-extrabold mt-4">₱20<span class="text-base text-slate-400 font-medium"> / seat</span></p><p class="text-slate-400 text-sm mt-4">A proposed shared-ride option for campus commuters.</p><button onclick="openWaitlist('express')" class="btn-ghost w-full rounded-xl py-3 mt-7 font-semibold">I'm interested in Express</button></article>
+  <article class="glass rounded-3xl p-7 relative" style="border-color:rgba(0,240,255,.35)"><span class="tag rounded-full px-3 py-1 text-xs">MONTHLY • PROPOSED</span><h3 class="text-2xl font-bold mt-5">Commuter Pro</h3><p class="text-4xl font-extrabold mt-4">₱99<span class="text-base text-slate-400 font-medium"> / month</span></p><p class="text-slate-400 text-sm mt-4">A proposed premium commute-planning experience.</p><button onclick="openWaitlist('pro')" class="btn-main w-full rounded-xl py-3 mt-7">I'm interested in Pro</button></article>
+ </div>
+ <p class="text-center text-xs text-slate-500 mt-5">No charges, reservations, or payment details are collected on this page.</p>
+</section>
+
+<section class="py-14 border-t border-slate-800 text-center">
+ <div class="glass rounded-3xl p-8 md:p-12"><p class="small-label">Help us validate FleetSignal</p><h2 class="text-3xl font-bold mt-3">Be part of the first student feedback group.</h2><p class="text-slate-400 mt-4">Join the early-access list and tell us what matters for your commute.</p><button onclick="openWaitlist('bottom')" class="btn-main rounded-xl px-7 py-4 mt-7">Join the waitlist →</button></div>
+</section>
+<section id="faq" class="py-12 max-w-3xl mx-auto"><h2 class="text-2xl font-bold mb-6">A few important things</h2>
+ <div class="space-y-4 text-sm"><details class="glass rounded-xl p-4"><summary class="font-semibold cursor-pointer">Is FleetSignal already operating?</summary><p class="text-slate-400 mt-3 leading-6">No. FleetSignal is currently a concept being tested. There are no live rides, live terminal metrics, or active commuter services.</p></details>
+ <details class="glass rounded-xl p-4"><summary class="font-semibold cursor-pointer">Will joining cost anything?</summary><p class="text-slate-400 mt-3 leading-6">No. Joining the waitlist is free. The prices shown are proposed prices for feedback only.</p></details>
+ <details class="glass rounded-xl p-4"><summary class="font-semibold cursor-pointer">What happens after I sign up?</summary><p class="text-slate-400 mt-3 leading-6">Your interest is recorded in this prototype. This standalone demo does not send emails or connect to a live database.</p></details></div>
+</section>
+</main>
+<footer class="max-w-7xl mx-auto w-full px-5 py-8 border-t border-slate-800 text-xs text-slate-500 flex flex-wrap justify-between gap-3"><span>© 2026 FleetSignal • LVCC Apalit student commute concept</span><span>Designed by LVCC Student Team 03 • Prototype only</span></footer>
+
+<!-- Transparent Fake Door / waitlist modal -->
+<div id="modal" class="modal-backdrop fixed inset-0 z-50 hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="glass rounded-2xl w-full max-w-lg p-6 md:p-8 relative">
+  <button onclick="closeModal()" aria-label="Close" class="absolute right-5 top-5 text-slate-400 hover:text-white text-xl">×</button>
+  <span class="tag rounded-full px-3 py-1 text-xs">EARLY ACCESS • CONCEPT TEST</span>
+  <h2 id="modalTitle" class="text-2xl font-bold mt-4">Join the FleetSignal waitlist</h2>
+  <p class="text-slate-400 text-sm leading-6 mt-2">This service is not available yet. Submit this form to register your interest. No payment or reservation will be made.</p>
+  <form id="waitlistForm" class="space-y-4 mt-6">
+   <input type="hidden" id="selectedPlan" value="general">
+   <div><label for="name" class="text-sm text-slate-300 block mb-2">Name <span class="text-slate-500">(optional)</span></label><input id="name" name="name" autocomplete="name" class="w-full rounded-lg px-4 py-3" placeholder="Your name"></div>
+   <div><label for="email" class="text-sm text-slate-300 block mb-2">Email address <span class="text-emerald-300">*</span></label><input id="email" name="email" type="email" required autocomplete="email" class="w-full rounded-lg px-4 py-3" placeholder="you@example.com"></div>
+   <div><label for="terminal" class="text-sm text-slate-300 block mb-2">Usual terminal <span class="text-slate-500">(optional)</span></label><select id="terminal" name="terminal" class="w-full rounded-lg px-4 py-3"><option value="">Choose one</option><option>Apalit Junction</option><option>Bayan Terminal</option><option>Other</option></select></div>
+   <div><label for="interest" class="text-sm text-slate-300 block mb-2">What interests you? <span class="text-slate-500">(optional)</span></label><select id="interest" name="interest" class="w-full rounded-lg px-4 py-3"><option value="">Choose one</option><option>Express Ride Pool (₱20/seat concept)</option><option>Commuter Pro (₱99/month concept)</option><option>Commute planning / updates</option><option>Just following the project</option></select></div>
+   <label class="flex gap-3 text-xs text-slate-400 leading-5"><input type="checkbox" id="consent" required class="mt-1 accent-cyan-400"><span>I agree that my information may be stored in this prototype to measure interest. <span class="text-emerald-300">*</span></span></label>
+   <button type="submit" class="btn-main w-full rounded-xl py-3.5">Register my interest</button>
+   <p id="formError" class="text-sm text-rose-300 hidden"></p>
+  </form>
+  <div id="success" class="hidden mt-6 rounded-xl p-5 border border-emerald-400/20 bg-emerald-400/5"><div class="text-emerald-300 font-bold text-lg">Interest recorded ✓</div><p class="text-slate-300 text-sm mt-2">Thank you. This prototype saved your entry in this browser only. It did not send an email or create a reservation.</p><button onclick="closeModal()" class="btn-ghost rounded-lg px-4 py-2 mt-4">Close</button></div>
+ </div>
+</div>
+<script>
+const STORE_KEY='fleetsignal_waitlist_v1', EVENT_KEY='fleetsignal_events_v1';
+function readStore(key){try{return JSON.parse(localStorage.getItem(key)||'[]')}catch{return []}}
+function track(event,details={}){const events=readStore(EVENT_KEY);events.push({event,details,at:new Date().toISOString()});localStorage.setItem(EVENT_KEY,JSON.stringify(events))}
+track('landing_page_view',{page:location.pathname});
+document.querySelectorAll('a[href="#plans"]').forEach(a=>a.addEventListener('click',()=>track('view_pricing')));
+function openWaitlist(source='unknown'){track('fake_door_open',{source});document.getElementById('selectedPlan').value=source;document.getElementById('modal').classList.remove('hidden');document.getElementById('modal').classList.add('flex');document.getElementById('modalTitle').textContent=source==='express'?'Interested in Express Ride Pool?':source==='pro'?'Interested in Commuter Pro?':'Join the FleetSignal waitlist';document.getElementById('success').classList.add('hidden');document.getElementById('waitlistForm').classList.remove('hidden');document.getElementById('formError').classList.add('hidden');document.body.style.overflow='hidden';setTimeout(()=>document.getElementById('email').focus(),50)}
+function closeModal(){document.getElementById('modal').classList.add('hidden');document.getElementById('modal').classList.remove('flex');document.body.style.overflow=''}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.querySelectorAll('#plans button').forEach(b=>b.addEventListener('click',()=>track('pricing_plan_click',{plan:b.textContent.trim()})));
+document.getElementById('waitlistForm').addEventListener('submit',e=>{
+ e.preventDefault();const email=document.getElementById('email').value.trim().toLowerCase();const error=document.getElementById('formError');
+ if(!email||!document.getElementById('consent').checked){error.textContent='Please enter a valid email and accept the consent statement.';error.classList.remove('hidden');return}
+ const entries=readStore(STORE_KEY);if(entries.some(x=>x.email===email)){error.textContent='This email is already on this browser’s waitlist.';error.classList.remove('hidden');return}
+ const entry={name:document.getElementById('name').value.trim(),email,terminal:document.getElementById('terminal').value,interest:document.getElementById('interest').value||document.getElementById('selectedPlan').value,source:document.getElementById('selectedPlan').value,createdAt:new Date().toISOString()};
+ entries.push(entry);localStorage.setItem(STORE_KEY,JSON.stringify(entries));track('waitlist_submit',{plan:entry.interest});track('waitlist_success');document.getElementById('waitlistForm').classList.add('hidden');document.getElementById('success').classList.remove('hidden');
+});
+/* Prototype-only local analytics. No server, email delivery, or external tracking. */
+window.FleetSignalPrototype={getWaitlist:()=>readStore(STORE_KEY),getEvents:()=>readStore(EVENT_KEY),clearDemoData:()=>{localStorage.removeItem(STORE_KEY);localStorage.removeItem(EVENT_KEY)}};
+</script>
+</body>
+</html>
